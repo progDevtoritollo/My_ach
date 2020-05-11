@@ -1,5 +1,6 @@
 import React from "react";
 
+import Avatar from "components"
 import './Header.scss'
 
 const Header = () => {
@@ -20,7 +21,9 @@ const Header = () => {
       </div>
 
       <div className="header__right__profile">
-        <div className="header__right__profile--picture"> picture </div>
+        <div className="header__right__profile--picture">
+          {/* <Avatar user={user}/> */}
+        </div>
         <div className="header__right__profile--user-name"> name </div>
       </div>
     </div>

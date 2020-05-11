@@ -5,7 +5,7 @@ import { Route, Redirect, Switch } from "react-router-dom";
 import { Auth, Home } from "pages";
 
 const App = props => {
-  const { isAuth } = props;
+  // const { isAuth } = props;
   return (
     <div className="wrapper">
       <Switch>
@@ -15,7 +15,8 @@ const App = props => {
           component={Auth}
         />
         <Route path="/"
-          render={() => (isAuth ? <Home /> : <Redirect to="/signin" /> )}
+            render={() => (true ? <Home /> : <Redirect to="/signin" /> )}
+            //render={() => (isAuth ? <Home /> : <Redirect to="/signin" /> )}
         />
       </Switch>
     </div>

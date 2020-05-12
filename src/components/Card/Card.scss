@@ -1,17 +1,36 @@
-// .button {
-//   &--large {
-//     height: 56px !important;
-//     background: #556CFB !important;//my
-//   }
-// }
+.card {
+  background-color:#151517;
+  display: flex;
+  max-width: 210px;
 
+  &__avatar {
+    width: 55px;
+    height: 55px;
+    margin-right: 5px;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__bubble {
+  }
+  &__fullname{
+    color: snow;
+    font-family: Dhyana;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  &__text {
+    color: #c4c4c4;
+    line-height: 1px;
+  }
 
-.card{
-    background-color: blueviolet;
-    
-
-    &__avatar{
-        
-    }
-    
+  &__date {
+    color: #c4c4c4;
+    font-size: 12px;
+    opacity: 0.5;
+  }
 }

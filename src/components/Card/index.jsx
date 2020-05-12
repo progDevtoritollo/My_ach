@@ -1,6 +1,4 @@
-import React, { 
-  // useState, useRef, useEffect 
-} from "react";
+import React, { Link, useState, useRef, useEffect } from "react";
 import PropTypes from "prop-types";
 import reactStringReplace from "react-string-replace";
 
@@ -12,9 +10,15 @@ import "./Card.scss";
 
 const Card = ({ user, date, event }) => {
   return (
+    // <Link to={`/archer/${user._id}`}>
     <div className="card">
-      <div className="card__avatar">{/* <Avatar user={user} /> */}</div>
+      <div className="card__avatar">
+        <Avatar user={user} />
+      </div>
       <div className="card__info">
+        <div className="card__fullname">
+          {user.fullname}
+        </div>
         {event && (
           <div className="card__bubble">
             {event && (
@@ -36,6 +40,7 @@ const Card = ({ user, date, event }) => {
         )}
       </div>
     </div>
+    // </Link>
   );
 };
 

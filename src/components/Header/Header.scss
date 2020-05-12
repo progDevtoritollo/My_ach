@@ -36,45 +36,46 @@
 
       margin-left: 50px;
       color: #ffffff;
-
     }
 
     &__seaching {
       color: #ffffff;
       margin-left: 50px;
-
     }
-
   }
 
-  &__right{
+  &__right {
     display: flex;
     flex-direction: row;
     align-items: center;
 
-    &--bell{
+    &--bell {
       color: #ffffff;
       font-size: 20px;
     }
 
-    &__profile{
+    &__profile {
       display: flex;
       flex-direction: row;
       align-items: center;
       margin: 15px;
 
-
-      &--picture{
-        color: #ffffff;
-        margin-left: 15px;
-        margin-right: 5px;
+      &--avatar {
+        width: 35px;
+        height: 35px;
+        margin-right: 20px;
+        margin-left: 10px;
       }
 
-      &--user-name{
-        color: #ffffff;
-        margin-right: 10px;
+      &--fullname {
+        color: snow;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+        margin-right: 40px;
       }
-
     }
   }
 }

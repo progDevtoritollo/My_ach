@@ -26,8 +26,8 @@ const Sidebar = ({
   const options = users.map(user => <Option key={user._id}>{user.fullname}</Option>);
 
   return (
-    <div className="chat__sidebar">
-      <div className="chat__sidebar-header">
+    <div className="arch__navbar">
+      <div className="arch__navbar-header">
         <div>
           <Icon type="team" />
           <span>Список диалогов</span>
@@ -35,7 +35,7 @@ const Sidebar = ({
         <Button onClick={onShow} type="link" shape="circle" icon="form" />
       </div>
 
-      <div className="chat__sidebar-dialogs">
+      <div className="arch__navbar-dialogs">
         <Dialogs userId={user && user._id} />
       </div>
       <Modal

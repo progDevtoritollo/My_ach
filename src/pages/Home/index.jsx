@@ -22,8 +22,7 @@ const Home = (props) => {
         <div className="arch__navbar">
           <Navbar />
         </div>
-       
-       
+        
         <div className="arch__right-side">
           <Header />
           <div className="arch__right-side__content">

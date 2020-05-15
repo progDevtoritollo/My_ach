@@ -6,7 +6,7 @@ import { connect } from "react-redux";
 import "./Home.scss";
 
 import { dialogsActions } from "redux/actions";
-import { SidebarHome, Navbar, Header } from "components";
+import { SidebarHome, Navbar, Header, Midle } from "components";
 
 const Home = (props) => {
   const { setCurrentDialogId, user } = props;
@@ -28,8 +28,7 @@ const Home = (props) => {
           <div className="arch__right-side__content">
             {true && (
               <div className="arch__right-side__content-midle">
-                {/* <Midle /> */}
-                dghfghfgh
+                <Midle /> 
               </div>
             )}
             <div className="arch__content__side">

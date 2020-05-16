@@ -8,14 +8,14 @@ import "./KRShoot.scss";
 
 const KRShoot = ({ user, date, event }) => {
   return (
-    <div className="kr">
+    <div className="midle__kr">
       <img 
-        className="kr-img"
+        className="midle__kr-img"
         src={FullTarget}
         alt="target"
       />
-      <div className="kr__table">
-      <KRHitTable/>
+      <div className="midle__kr__table">
+        <KRHitTable/>
       </div>
     </div>
   );

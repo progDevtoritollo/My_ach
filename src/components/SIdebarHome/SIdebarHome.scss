@@ -1,12 +1,17 @@
+@import "~styles/variables";
+
 .sidebar{
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 280px;
   height: 100%;
+  position: fixed;
+  right: 25px;
+  margin-top: 25px;
 
-  background: #151517;
-  border: 1px solid #323030;
+  background: $background-block-color;
+  border: 1px solid $border-midle-block;
   box-sizing: border-box;
   border-radius: 15px;
 

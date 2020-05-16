@@ -22,3 +22,4 @@ export { default as SidebarHome } from "./SidebarHome";
 export { default as Midle } from "./Midle";
 export { default as KRShoot } from "./KRShoot";
 export { default as KRHitTable } from "./KRHitTable";
+export { default as Table } from "./Table";

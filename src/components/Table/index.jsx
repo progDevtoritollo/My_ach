@@ -1,10 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import "./KRHitTable.scss";
+
+import "./Table.scss";
 
 
-import { Table, Typography } from 'antd';
+import { Table as BaseTab, Typography } from 'antd';
 
 const { Text } = Typography;
 
@@ -142,10 +143,11 @@ const data = [
 
 
 
-const KRHitTable = () => {
-  return(
+
+const Table = ({ user, date, event }) => {
+  return (
     <>
-    <Table
+    <BaseTab
       columns={columns}
       dataSource={data}
       pagination={false}
@@ -161,21 +163,21 @@ const KRHitTable = () => {
 
       //   return (
       //     <>
-      //       <Table.Summary.Row>
-      //         <Table.Summary.Cell>Total</Table.Summary.Cell>
-      //         <Table.Summary.Cell>
+      //       <BaseTab.Summary.Row>
+      //         <BaseTab.Summary.Cell>Total</BaseTab.Summary.Cell>
+      //         <BaseTab.Summary.Cell>
       //           <Text type="danger">{totalBorrow}</Text>
-      //         </Table.Summary.Cell>
-      //         <Table.Summary.Cell>
+      //         </BaseTab.Summary.Cell>
+      //         <BaseTab.Summary.Cell>
       //           <Text>{totalRepayment}</Text>
-      //         </Table.Summary.Cell>
-      //       </Table.Summary.Row>
-      //       <Table.Summary.Row>
-      //         <Table.Summary.Cell>Balance</Table.Summary.Cell>
-      //         <Table.Summary.Cell colSpan={2}>
+      //         </BaseTab.Summary.Cell>
+      //       </BaseTab.Summary.Row>
+      //       <BaseTab.Summary.Row>
+      //         <BaseTab.Summary.Cell>Balance</BaseTab.Summary.Cell>
+      //         <BaseTab.Summary.Cell colSpan={2}>
       //           <Text type="danger">{totalBorrow - totalRepayment}</Text>
-      //         </Table.Summary.Cell>
-      //       </Table.Summary.Row>
+      //         </BaseTab.Summary.Cell>
+      //       </BaseTab.Summary.Row>
       //     </>
       //   );
       // }}
@@ -185,5 +187,14 @@ const KRHitTable = () => {
   );
 };
 
+// Table.defaultProps = {
+//   user: {},
+// };
 
-export default KRHitTable;
+// Table.propTypes = {
+//   date: PropTypes.string,
+//   user: PropTypes.object,
+//   event: PropTypes.string,
+// };
+
+export default Table;

@@ -6,7 +6,7 @@ import { connect } from "react-redux";
 import "./Home.scss";
 
 import { dialogsActions } from "redux/actions";
-import { SidebarHome, Navbar, Header, Midle } from "components";
+import { Sidebar, Navbar, Header, Midle } from "components";
 
 const Home = (props) => {
   const { setCurrentDialogId, user } = props;
@@ -32,7 +32,7 @@ const Home = (props) => {
               </div>
             )}
             <div className="arch__content__side">
-              <SidebarHome />
+              <Sidebar />
             </div>
           </div>
         </div>

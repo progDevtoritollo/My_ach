@@ -1,94 +1,40 @@
-import React from 'react';
-import { Icon, Button, Modal, Select, Input, Form } from 'antd';
-import { Dialogs } from 'containers';
+import React from "react";
+import { Empty } from "antd";
 
 import './Sidebar.scss';
+import { Card } from "../";
 
-const { Option } = Select;
-const { TextArea } = Input;
+const user={
+  _id:"7DD987F846400079F4B03C058365A4869047B4A0",
+  fullname: "Jennifer Connelly",
+  avatar:"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ0Q2UWfXtTeWHJmOGJw5pS8gSeZIIVP1ydFmbtbfyjJdk-FbJk&usqp=CAU",
+}
+let date="Sun Apr 21 2019 21:30:07";
+let event= "Добавилa серию";
 
-const Sidebar = ({
-  user,
-  visible,
-  inputValue,
-  messageText,
-  selectedUserId,
-  isLoading,
-  users,
-  onShow,
-  onClose,
-  onSearch,
-  onChangeInput,
-  onSelectUser,
-  onChangeTextArea,
-  onModalOk,
-}) => {
-  const options = users.map(user => <Option key={user._id}>{user.fullname}</Option>);
-
+const Sidebar = () => {
   return (
-    <div className="arch__navbar">
-      <div className="arch__navbar-header">
-        <div>
-          <Icon type="team" />
-          <span>Список диалогов</span>
-        </div>
-        <Button onClick={onShow} type="link" shape="circle" icon="form" />
-      </div>
-
-      <div className="arch__navbar-dialogs">
-        <Dialogs userId={user && user._id} />
-      </div>
-      <Modal
-        title="Создать диалог"
-        visible={visible}
-        onCancel={onClose}
-        footer={[
-          <Button key="back" onClick={onClose}>
-            Закрыть
-          </Button>,
-          <Button
-            disabled={!messageText}
-            key="submit"
-            type="primary"
-            loading={isLoading}
-            onClick={onModalOk}>
-            Создать
-          </Button>,
-        ]}>
-        <Form className="add-dialog-form">
-          <Form.Item label="Введите имя пользователя или E-Mail">
-            <Select
-              value={inputValue}
-              onSearch={onSearch}
-              onChange={onChangeInput}
-              onSelect={onSelectUser}
-              notFoundContent={null}
-              style={{ width: '100%' }}
-              defaultActiveFirstOption={false}
-              showArrow={false}
-              filterOption={false}
-              placeholder="Введите имя пользователя или почту"
-              showSearch>
-              {options}
-            </Select>
-          </Form.Item>
-          {selectedUserId && (
-            <Form.Item label="Введите текст сообщения">
-              <TextArea
-                autosize={{ minRows: 3, maxRows: 10 }}
-                onChange={onChangeTextArea}
-                value={messageText}
-              />
-            </Form.Item>
-          )}
-        </Form>
-      </Modal>
+  <div className="sidebar">
+    <div className="sidebar__name">Recently activity</div>
+    <div className="sidebar__cards">
+      <Card
+        event={event}
+        date={date}
+        user={user}
+      />
+      <Card
+        event={event}
+        date={date}
+        user={user}
+      />
+      <Card
+        event={event}
+        date={date}
+        user={user}
+      />
     </div>
+  </div>
   );
-};
-
-Sidebar.defaultProps = {
-  users: [],
 };
 
 export default Sidebar;

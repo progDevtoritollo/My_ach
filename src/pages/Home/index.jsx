@@ -18,31 +18,25 @@ const Home = (props) => {
 
   return (
     <section className="home">
+      <Target />
 
-
-
-{/* <Target /> */}
-
-
-      {/* <div className="arch">
+      <div className="arch">
         <div className="arch__navbar">
           <Navbar />
         </div>
-        
+
         <div className="arch__right-side">
           <Header />
           <div className="arch__right-side__content">
             {true && (
               <div className="arch__right-side__content-midle">
-                <Midle /> 
+                <Midle />
               </div>
             )}
-            <div className="arch__content__side">
-              <Sidebar />
-            </div>
+            <div className="arch__content__side">{/* <Sidebar /> */}</div>
           </div>
         </div>
-      </div> */}
+      </div>
     </section>
   );
 };

@@ -4,7 +4,7 @@ import { Route, Redirect, Switch } from "react-router-dom";
 
 import { Auth, Home } from "pages";
 
-const App = props => {
+const App = (props) => {
   // const { isAuth } = props;
   return (
     <div className="wrapper">
@@ -14,9 +14,10 @@ const App = props => {
           path={["/signin", "/signup", "/signup/verify"]}
           component={Auth}
         />
-        <Route path="/"
-            render={() => (true ? <Home /> : <Redirect to="/signin" /> )}
-            //render={() => (isAuth ? <Home /> : <Redirect to="/signin" /> )}
+        <Route
+          path="/"
+          render={() => (true ? <Home /> : <Redirect to="/signin" />)}
+          //render={() => (isAuth ? <Home /> : <Redirect to="/signin" /> )}
         />
       </Switch>
     </div>

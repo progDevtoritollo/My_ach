@@ -2,23 +2,19 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import "./Duel.scss";
-import FullTarget from "assets/img_my/FullTarget.png";
-import { DuelHitTable } from 'components';
+import Bullet from "assets/img/Shoot.js";
+import { DuelHitTable } from "components";
 
 const Duel = () => {
-  return(
+  return (
     <div className="midle__kr">
-      <img 
-        className="midle__kr-img"
-        src={FullTarget}
-        alt="target"
-      />
+      <Bullet />
+      {/* <img className="midle__kr-img" src={Bullet} alt="target" /> */}
       <div className="midle__kr__table">
-        <DuelHitTable/>
+        <DuelHitTable />
       </div>
     </div>
   );
 };
-
 
 export default Duel;

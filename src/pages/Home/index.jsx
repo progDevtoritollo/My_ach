@@ -6,7 +6,7 @@ import { connect } from "react-redux";
 import "./Home.scss";
 
 import { dialogsActions } from "redux/actions";
-import { Sidebar, Navbar, Header, Midle } from "components";
+import { Sidebar, Navbar, Header, Midle, Target } from "components";
 
 const Home = (props) => {
   const { setCurrentDialogId, user } = props;
@@ -18,7 +18,13 @@ const Home = (props) => {
 
   return (
     <section className="home">
-      <div className="arch">
+
+
+
+{/* <Target /> */}
+
+
+      {/* <div className="arch">
         <div className="arch__navbar">
           <Navbar />
         </div>
@@ -31,12 +37,12 @@ const Home = (props) => {
                 <Midle /> 
               </div>
             )}
-            {/* <div className="arch__content__side">
+            <div className="arch__content__side">
               <Sidebar />
-            </div> */}
+            </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

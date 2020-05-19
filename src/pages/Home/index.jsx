@@ -31,9 +31,9 @@ const Home = (props) => {
                 <Midle /> 
               </div>
             )}
-            <div className="arch__content__side">
+            {/* <div className="arch__content__side">
               <Sidebar />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

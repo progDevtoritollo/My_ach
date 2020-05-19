@@ -15,11 +15,9 @@ const Header = () => {
   <div className="header">
     <div className="header__left">
       <div className="header__left__name-page">
-        Dashbord
+        ArcHelper
       </div>
-      <div className="header__left__seaching">
-        searching...
-      </div>
+
     </div>
     
     <div className= "header__right">

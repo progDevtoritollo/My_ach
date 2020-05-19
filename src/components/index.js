@@ -16,7 +16,7 @@ export { default as Block } from "./Block";
 export { default as Button } from "./Button";
 export { default as Navbar } from "./Navbar";
 export { default as Header } from "./Header";
-export { default as Card } from "./Card";
+export { default as CardItem } from "./CardItem";
 export { default as Midle } from "./Midle";
 export { default as KRShoot } from "./KRShoot";
 export { default as KRHitTable } from "./KRHitTable";

@@ -18,13 +18,7 @@ const Home = (props) => {
 
   return (
     <section className="home">
-
-
-
-{/* <Target /> */}
-
-
-      {/* <div className="arch">
+      <div className="arch">
         <div className="arch__navbar">
           <Navbar />
         </div>
@@ -42,7 +36,7 @@ const Home = (props) => {
             </div>
           </div>
         </div>
-      </div> */}
+      </div> 
     </section>
   );
 };

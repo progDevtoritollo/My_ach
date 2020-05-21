@@ -5,7 +5,7 @@ import "./Target.scss";
 
 const Target = () => {
 const [state, setState ] = React.useState([ { x: 0, y: 0 } ])
-  
+
   let handleMouseMove=(event)=>{
     setState({
       x: event.clientX,

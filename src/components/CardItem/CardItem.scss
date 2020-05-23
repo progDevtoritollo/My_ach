@@ -1,7 +1,9 @@
 .card {
-  background-color:#151517;
+  // background-color:#151517;
+  // max-width: 210px;
   display: flex;
-  max-width: 210px;
+  margin-top:10px;
+  margin-left: 20px;
 
   &__avatar {
     width: 55px;
@@ -12,8 +14,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
-  &__bubble {
   }
   &__fullname{
     color: snow;

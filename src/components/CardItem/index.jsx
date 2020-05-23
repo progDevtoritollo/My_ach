@@ -8,22 +8,22 @@ import { Time, Avatar } from "..";
 
 import "./CardItem.scss";
 
-const CardItem = ({ user, date, event }) => {
+const CardItem = ({ item }) => {
   return (
     // <Link to={`/archer/${user._id}`}>
       <div className="card">
         <div className="card__avatar">
-          <Avatar user={user} />
+          <Avatar user={item.user} />
         </div>
         <div className="card__info">
-          <div className="card__fullname">{user.fullname}</div>
-          {event && (
+          <div className="card__fullname">{item.user.fullname}</div>
+          {item.event && (
             <div className="card__bubble">
-              {event && (
+              {item.event && (
                 <p className="card__text">
-                  {reactStringReplace(event, /:(.+?):/g, (i) => (
+                  {reactStringReplace(item.event, /:(.+?):/g, (i) => (
                     <span key={i} size={16}>
-                      {event}
+                      {item.event}
                     </span>
                   ))}
                 </p>
@@ -31,9 +31,9 @@ const CardItem = ({ user, date, event }) => {
             </div>
           )}
 
-          {date && (
+          {item.date && (
             <span className="card__date">
-              <Time date={date} />
+              <Time date={item.date} />
             </span>
           )}
         </div>

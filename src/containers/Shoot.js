@@ -9,11 +9,12 @@ function Shoot(props) {
       zoomAndPan="magnify"
       contentStyleType="text/css"
       id="prefix__svg2"
-      width="160mm"
+      width="120mm"  //      width="160mm" 
+
       xmlSpace="preserve"
       preserveAspectRatio="xMidYMid meet"
       viewBox="0 0 210 210"
-      height="210mm"
+      height="120mm" //      height="160mm"
       fillRule="evenodd"
       {...props}
     >

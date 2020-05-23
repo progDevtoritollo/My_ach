@@ -127,6 +127,7 @@ const data = [
 
 
 const KRShoot = () => {
+  
   const [shots,setShots] = useState([data])
   const [bullets, setBullet] = useState([]);
 

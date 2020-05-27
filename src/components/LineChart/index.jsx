@@ -24,17 +24,13 @@ const LineChart = () => {
     chart();
   }, []);
   return (
-    <div >
-      <h1 >Dash</h1>
-      <div 
-      style={{ height: "300px", width: "600px" }}      
-      >
+    <div className="app">
+
         <Line data={chartData}       
-          option={{
-          responsive: false
-          }}
+          // option={{
+          // responsive: false
+          // }}
       />
-      </div>
     </div>
   );
 };

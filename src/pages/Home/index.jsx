@@ -26,14 +26,14 @@ const Home = (props) => {
         <div className="arch__right-side">
           <Header />
           <div className="arch__right-side__content">
-            {true && ( 
+            {/* {true && (  */}
               <div className="arch__right-side__content-midle">
                 <Midle />
               </div>
-            )}
-            {/* <div className="arch__content__side"> */}
+            {/* )} */}
+            <div className="arch__right-side__content__side">
               <Sidebar />
-            {/* </div> */}
+            </div>
           </div>
         </div>
       </div> 

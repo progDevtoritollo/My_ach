@@ -6,7 +6,6 @@ import { generateAvatarFromHash } from "utils/helpers";
 import "./Avatar.scss";
 
 const Avatar = ({user}) => {
-  console.log(user);
   if (user.avatar) {
     return (
       <img

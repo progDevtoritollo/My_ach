@@ -24,6 +24,11 @@ export { default as KRHitTable } from "./KRHitTable";
 export { default as Table } from "./Table";
 export { default as Duel } from "./Duel";
 export { default as DuelHitTable } from "./DuelHitTable";
+export { default as Competition } from "./Competition";
+export { default as CreateCompetition } from "./CreateCompetition";
+export { default as  ActiveCompetition } from "./ActiveCompetition";
+
+
 // export { default as Target } from "./Target";
 
 export { default as LineChart } from "./LineChart";

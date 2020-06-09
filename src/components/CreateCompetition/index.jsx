@@ -14,7 +14,7 @@ const CreateCompetition = (props) => {
       <Form onFinish={handleFinish}>
         <Form.Item>
           <div className="lep">
-            <h1>создать соревнования по секции</h1>
+            <h1>создать соревнования секции</h1>
             <Button type="primary" size="large">
               Создать соревнование
             </Button>

@@ -90,7 +90,7 @@ const KRShoot = () => {
   return (
     <div className="midle_kr" style={{ position: "absolute" }}>
       <div className="midle_kr__target_submit_btn">
-        <h1 className="midle_kr__target_submit_btn__aericl">KR</h1>
+        <h1 >Внесение попаданий </h1>
         <Shoot handleClick={handleClick} />
         {bullet.map((value) => {
           return (

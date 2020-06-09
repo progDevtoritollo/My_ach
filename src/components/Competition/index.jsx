@@ -19,7 +19,8 @@ const Competition = () => {
 
   return(
     <div className="midle__competition">
-      {activeCompetition ? <ActiveCompetition data={activeCompetition}/> : <CreateCompetition onCreate={handleCreate}/> }
+      {true ? <ActiveCompetition data={activeCompetition}/> : <CreateCompetition onCreate={handleCreate}/> }
+      {/* activeCompetition */}
     </div>
   );
 };

@@ -11,8 +11,10 @@
 
   margin: 40px;
   padding: 40px;
+
   display: flex;
   flex-direction: row;
+  justify-content: center;
 
   &__create {
     height: 100%;
@@ -25,7 +27,7 @@
       font-weight: normal;
       font-size: 30px;
       line-height: 35px;
-      margin-bottom: 70px;
+      margin-bottom: 190px;
     }
     .lep {
       margin-top: 130px;
@@ -34,6 +36,8 @@
       justify-content: space-evenly;
       align-items: center;
     }
+  }
+  &__active {
   }
 }
 

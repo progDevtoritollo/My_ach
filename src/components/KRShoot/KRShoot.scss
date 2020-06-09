@@ -1,26 +1,35 @@
 @import "~styles/variables";
 
-.midle_kr{
-    background: $background-block-color;
-    border: 1px solid $border-midle-block;
-    box-sizing: border-box;
-    border-radius: 15px;
+.midle_kr {
+  background: $background-block-color;
+  border: 1px solid $border-midle-block;
+  box-sizing: border-box;
+  border-radius: 15px;
 
-    height: 615px;
+  height: 615px;
 
-    margin: 40px;
-    padding: 40px;
-    display: flex;
-    flex-direction: row;
-    
-    &__target_submit_btn{
-        margin: 15px;
-        &__aericl{
-            color: snow;
-        }
+  margin: 40px;
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+
+  &__target_submit_btn {
+    margin: 15px;
+    h1 {
+      font-family: Quantico;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 29px;
+      color: #c0c0c0;
+      margin-bottom: 10px;
+      margin-left: 150px;
     }
-    &__table {
-        margin-left: 50px;
+    &__aericl {
+      color: snow;
     }
-
+  }
+  &__table {
+    margin-left: 50px;
+  }
 }
